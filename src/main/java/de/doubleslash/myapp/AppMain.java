@@ -39,8 +39,8 @@ public class AppMain {
         };
     }
 
-    private void printIt(Item item) {
-        LOG.info("><> ><> ><> " + item);
+    private void printIt(Item it) {
+        LOG.info("><> ><> ><> " + it);
         LOG.info("><> ><> ><> ");
     }
 
