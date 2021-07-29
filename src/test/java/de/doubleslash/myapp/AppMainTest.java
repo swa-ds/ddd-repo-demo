@@ -1,4 +1,4 @@
-package de.doubleslash.myapp.item;
+package de.doubleslash.myapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

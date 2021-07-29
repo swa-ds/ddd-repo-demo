@@ -1,4 +1,4 @@
-package de.doubleslash.myapp.item;
+package de.doubleslash.myapp;
 
 import java.util.List;
 
