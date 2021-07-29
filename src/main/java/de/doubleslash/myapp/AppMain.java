@@ -24,8 +24,8 @@ public class AppMain {
     @Bean
     CommandLineRunner runner(ItemRepository repo) {
         return args -> {
-            repo.save(createItem("Item 1"));
-            repo.save(createItem("Item 2"));
+            repo.save(new Item("Item 1"));
+            repo.save(new Item("Item 2"));
 
             List<Item> allItems = repo.findAll();
 
@@ -37,10 +37,6 @@ public class AppMain {
             items = repo.findByCustomQuery("Item 2");
             items.forEach(this::printIt);
         };
-    }
-
-    private Item createItem(String name) {
-        return new Item(name);
     }
 
     private void printIt(Item item) {
